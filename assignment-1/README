@@ -1,0 +1,12 @@
+
+  Usage: book [options]
+
+  Options:
+
+    -h, --help            output usage information
+    -V, --version         output the version number
+    -t, --title [value]   Title of the book to match
+    -a, --author [value]  Author of the book to match
+    -p, --price [value]   Price of the book to match
+    -k, --kind [value]    Kind of the book to match
+
