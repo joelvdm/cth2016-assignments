@@ -35,16 +35,16 @@ var book5_kind = "Hardcover";
 // initialise program (aka commander) 
 program
   .version('0.0.1')
-  .option('-t, --title [value]', 'Title of the book to match', 'empty')
-  .option('-a, --author [value]', 'Author of the book to match', 'empty')
-  .option('-p, --price [value]', 'Price of the book to match', 'empty')
-  .option('-k, --kind [value]', 'Kind of the book to match', 'empty') // add option --name with default value "empty"
+  .option('-t, --title [value]', 'Title of the book to match', 'empty') // add option --title with default value "empty"
+  .option('-a, --author [value]', 'Author of the book to match', 'empty') // add option --author with default value "empty"
+  .option('-p, --price [value]', 'Price of the book to match', 'empty') // add option --price with default value "empty"
+  .option('-k, --kind [value]', 'Kind of the book to match', 'empty') // add option --kind with default value "empty"
   .parse(process.argv);								
 
-// check what the value of name is regardless of if it matches or not
+// check what the value of title is regardless of if it matches or not
 //console.log(program.title); // this line can be commented out
 
-// match value of input's "name" argument
+// match value of input's "title" argument
 switch(program.title) 
 {
 	case book1_title:
@@ -85,6 +85,8 @@ switch(program.title)
 
 }
 
+// check what the value of author is regardless of if it matches or not
+// match value of input's "author" argument
 switch(program.author)	
 {
 	case book1_author:
@@ -124,7 +126,8 @@ switch(program.author)
 		break;
 	
 }
- 
+// check what the value of price is regardless of if it matches or not
+// match value of input's "title" argument 
 switch(program.price)	
 {
 	case book1_price:
@@ -134,6 +137,11 @@ switch(program.price)
 		console.log(book1_price);
 		console.log(book1_kind);
 		break;
+
+}
+switch(program.price)	
+{
+
 	case book2_price:
 		// input match book2
 		console.log(book2_title);
@@ -141,6 +149,11 @@ switch(program.price)
 		console.log(book2_price);
 		console.log(book2_kind);
 		break;
+
+}
+switch(program.price)	
+{
+
 	case book3_price:
 		// input match book3
 		console.log(book3_title);
@@ -148,6 +161,11 @@ switch(program.price)
 		console.log(book3_price);
 		console.log(book3_kind);
 		break;
+
+}
+switch(program.price)	
+{
+
 	case book4_price:
 		// input match book4
 		console.log(book4_title);
@@ -155,6 +173,11 @@ switch(program.price)
 		console.log(book4_price);
 		console.log(book4_kind);
 		break;
+
+}
+switch(program.price)	
+{
+
 	case book5_price:
 		// input match book5
 		console.log(book5_title);
