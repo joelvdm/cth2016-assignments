@@ -127,7 +127,7 @@ switch(program.author)
 	
 }
 // check what the value of price is regardless of if it matches or not
-// match value of input's "title" argument 
+// match value of input's "price" argument 
 switch(program.price)	
 {
 	case book1_price:
@@ -187,7 +187,9 @@ switch(program.price)
 		break;
 	
 }
- 
+
+// check what the value of kind is regardless of if it matches or not
+// match value of input's "kind" argument
  switch(program.kind)	
 {
 	case book1_kind:
